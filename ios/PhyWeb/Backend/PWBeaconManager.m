@@ -327,7 +327,7 @@
 
   [_beaconsDict setObject:beacon forKey:[[beacon uriBeacon] URI]];
   NSUInteger idx = [_requests indexOfObject:request];
-  if (idx != NSNotFound && idx>0 && ([_pendingBeaconsInfos count]>0)) {
+  if (idx != NSNotFound && ([_pendingBeaconsInfos count]>idx)) {
     NSDictionary* beaconInfo = [_pendingBeaconsInfos objectAtIndex:idx];
     NSTimeInterval discoveryDelay =
         [beaconInfo[DISCOVERY_DELAY_KEY] doubleValue];
