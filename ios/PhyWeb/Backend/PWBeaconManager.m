@@ -16,7 +16,7 @@
 
 #import "PWBeaconManager.h"
 
-#import <UriBeacon/UriBeacon.h>
+#import "UriBeacon.h"
 
 #import "PWBeacon.h"
 #import "PWMetadataRequest.h"
@@ -327,7 +327,7 @@
 
   [_beaconsDict setObject:beacon forKey:[[beacon uriBeacon] URI]];
   NSUInteger idx = [_requests indexOfObject:request];
-  if (idx != NSNotFound) {
+  if (idx != NSNotFound && idx>0 && ([_pendingBeaconsInfos count]>0)) {
     NSDictionary* beaconInfo = [_pendingBeaconsInfos objectAtIndex:idx];
     NSTimeInterval discoveryDelay =
         [beaconInfo[DISCOVERY_DELAY_KEY] doubleValue];

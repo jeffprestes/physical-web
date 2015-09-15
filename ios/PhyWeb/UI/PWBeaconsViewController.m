@@ -17,7 +17,7 @@
 #import "PWBeaconsViewController.h"
 
 #import <CoreBluetooth/CoreBluetooth.h>
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 #import "SVPullToRefresh.h"
 
 #import "PWBeaconManager.h"

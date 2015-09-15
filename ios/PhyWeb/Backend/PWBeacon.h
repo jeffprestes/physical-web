@@ -15,7 +15,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <UriBeacon/UriBeacon.h>
+//#import <UriBeacon/UriBeacon.h>
+#import "UriBeacon.h"
 
 @interface PWBeacon : NSObject
 

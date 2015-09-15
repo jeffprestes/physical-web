@@ -94,8 +94,7 @@
   if (_error != nil) {
     _results = [[NSMutableArray alloc] init];
     for (UBUriBeacon *uriBeacon in [self uriBeacons]) {
-      PWBeacon *beacon =
-          [[PWBeacon alloc] initWithUriBeacon:uriBeacon info:nil];
+      PWBeacon *beacon = [[PWBeacon alloc] initWithUriBeacon:uriBeacon info:nil];
       [_results addObject:beacon];
     }
   }
@@ -112,8 +111,7 @@
   _delay = [NSDate timeIntervalSinceReferenceDate] - _startTime;
   _connection = nil;
   NSError *error;
-  NSDictionary *result =
-      [NSJSONSerialization JSONObjectWithData:_data options:0 error:&error];
+  NSDictionary *result =  [NSJSONSerialization JSONObjectWithData:_data options:0 error:&error];
   _error = error;
   if (_error != nil) {
     [self _done];

@@ -18,7 +18,7 @@
 
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <CoreFoundation/CoreFoundation.h>
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 
 #import "PWBeaconManager.h"
 #import "PWConfigureViewController.h"
