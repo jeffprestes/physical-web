@@ -18,7 +18,7 @@
 
 #import "PWBeacon.h"
 #import "PWSignalStrengthView.h"
-#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 
 #define FAVICON_WHITESPACE 1
 

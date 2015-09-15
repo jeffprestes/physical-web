@@ -16,7 +16,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <UriBeacon/UriBeacon.h>
+#import "UriBeacon.h"
 
 // This part of the UI will show a configuration panel for a configurable
 // beacon. It will let the user set a URL for it.
