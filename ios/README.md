@@ -6,7 +6,7 @@ Keep in mind that this software is just a prototype and this project is original
 
 In order to import the iOS dependencies correctly after clone the original project execute these steps:
 
-* Open the Terminal and access the project location
+* Access the project location ```cd physical-web```
 * And executes: ```git pull --rebase --prune && git submodule update --init --recursive```
 * Open the project on XCode 
 * Clean and build the project
